@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+    .button{padding:1pc;
+    border-radius:10px;
+    margin:2px;
+    background-color:rgba(460,32,46,0.6);
+    color:white;
+    width:25%;
+    margin-left:10px;
+    
+    
+    }
+    .button:hover{background-color:yellow;
+    color:black;}
+   body{background-image:linear-gradient(to right,#5d6dff,#b474ff,skyblue);}
+    
+    #inputpanel{border-radius:7px;
+    height:45px;
+    width:100%;
+    border:ridge;
+    font-size:45px;
+    font-family:Georgia;
+    background-color:rgba(255,255,255,0.6);}
+    
+    .calculator{align:center;
+    transform:translate(-50,-50);}
+    
+    .table{margin-top:1pc;
+    height:100%;
+    width:100%;}
+    
+    .td{padding:2pc;
+    margin-left:-50px;}
+    
+    #clear{height:90%;
+    width:100%;
+    padding-right:14px;}
+    
+    #equal{background-color:blue;
+    width:100%;
+    height:100%;}
+    #footer{
+    width:100%;
+    display:block;
+    text-align:center;
+    background-color:#74a5ff;
+    margin:0px;
+    font-weight:bolder;
+    border-radius:5px;
+    letter-spacing:1px;
+    font-family:courier;
+    border:solid white;
+    
+    }
+    
+    
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+    <form name="form" id="form">
+    <input name="answer" id="inputpanel">
+    
+    
+  <table class="table">
+  <tr>
+  <td class="td">
+<input type="button" class="button" value="1" name="button" onclick="form.answer.value +='1'"></input>
+
+
+<input type="button" class="button" value="2" name="button" onclick="form.answer.value +='2'"></input>
+ 
+
+<input type="button" class="button" value="3" name="button" onclick="form.answer.value +='3'"></input>
+    
+    <br>
+    
+   <br>
+<input type="button" class="button" value="4" name="button" onclick="form.answer.value +='4'"></input>
+
+
+<input type="button" class="button" value="5" name="button" onclick="form.answer.value +='5'"></input>
+ 
+
+<input type="button" class="button" value="6" name="button" onclick="form.answer.value +='6'"></input>
+    
+    <br>
+    
+    
+    <br>
+<input type="button" class="button" value="7" name="button" onclick="form.answer.value +='7'"></input>
+
+
+<input type="button" class="button" value="8" name="button" onclick="form.answer.value +='8'"></input>
+ 
+
+<input type="button" class="button" value="9" name="button" onclick="form.answer.value +='9'"></input>
+    
+    <br>
+    
+    <br>
+<input type="button" class="button" value="*" name="button" onclick="form.answer.value +='*'"></input>
+
+
+<input type="button" class="button" value="+" name="button" onclick="form.answer.value +='+'"></input>
+ 
+
+<input type="button" class="button" value="-" name="button" onclick="form.answer.value +='-'"></input>
+    
+    <br>    
+    
+    <br>
+<input type="button" class="button" value="/" name="button" onclick="form.answer.value +='/'"></input>
+
+
+<input type="button" class="button" value="0" name="button" onclick="form.answer.value += '0'"></input>
+ 
+
+<input type="button" class="button" value="-1" name="button" onclick="form.answer.value -= '1'"></input>
+
+<br><br>
+<input type="button" class="button" id="equal" value="=" name="button" onclick="form.answer.value =eval(form.answer.value)"></input>
+    
+    </td>
+    <td>
+    <a href="calculator.html"><button class="button" id="clear">clear</button></a>
+    </td>
+    </tr>
+    </table>
+    <br>
+    </input>
+    
+    </form>
+    </div>
+</body>
+<footer id="footer">PandaCode Coded by Aman Verma
+</footer>
+</html>
