@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <!-- Java Script Tutorial -->
 <html lang="en">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Script Tutorial</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-   <style>     
-        *{
-         margin: 0px;
-         padding: 0px;
-         font-family: Arial, Helvetica, sans-serif;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .poppins-thin {
+            font-family: "Poppins", sans-serif;
+            font-weight: 100;
+            font-style: normal;
         }
-        #main{
-         position: relative;
-         max-width: 800px;
-         margin: 15px 300px 19px 489px;
-         height: 100%;
-         line-height: 1.5;
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Poppins", sans-serif;
         }
-        .info{
-         
-         font-family: Arial, Helvetica, sans-serif;
+
+        #main {
+            position: relative;
+            max-width: 800px;
+            margin: 15px 300px 19px 489px;
+            height: 100%;
+            line-height: 1.5;
         }
-        .divider{
+
+        .info {
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .divider {
             margin: 1rem 0rem;
         }
-        .divider{
+
+        .divider {
             border-top: 1px solid rgba(34, 36, 38, 0.15);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-        #run{
+
+        #run {
             display: flex;
             align-items: center;
             gap: 7px;
             font-size: 19px;
         }
-        .image-monster{
+
+        .image-monster {
             float: right;
             margin-right: 0em;
             margin-bottom: 1em;
             margin-left: 1em;
             width: 300px;
-            height:auto ;
+            height: auto;
             position: relative;
         }
-        p{
+
+        p {
             margin-bottom: 18px;
             font-size: 18px;
 
         }
-        .table{
+
+        .table {
             position: relative;
             border: 1px solid rgba(34, 36, 38, 0.15);
             border-top: 2px solid #21ba45;
             padding: 1rem 1rem;
             border-radius: 0.5rem;
-            
+
         }
-        
-    
-     </style>
+    </style>
 </head>
+
 <body>
     <div id="main" class="info">
         <div class="info">
             <h1 style="color: #161c20; font-size: 34px;">Java Script Tutorial For Beginners</h1>
-            <h2 style="margin: 6px 0px 10px; font-weight: 600;font-size: 24px; color: #666666;" > &nbsp;&nbsp; Learn with us java script</h2>
+            <h2 style="margin: 6px 0px 10px; font-weight: 600;font-size: 24px; color: #666666;"> &nbsp;&nbsp; Learn with
+                us java script</h2>
         </div>
         <div class="divider"></div>
-        <div class="info" id="run" >
+        <div class="info" id="run">
             <a href="" style="text-decoration: none;">Tutorials</a>
-            <i class="fa-solid fa-angle-right"></i> 
+            <i class="fa-solid fa-angle-right"></i>
             <a href="" style="text-decoration: none;">Java Script</a>
         </div>
-        <div class="divider"></div>        
-        <img src="monster002.jpg" alt="monster002" class="image-monster info" >
-         <p>In this tutorial, the learning speed is your choice.
+        <div class="divider"></div>
+        <img src="monster002.jpg" alt="monster002" class="image-monster info">
+        <p>In this tutorial, the learning speed is your choice.
             Everything is up to you. &nbsp;
             If you are struggling, take a break, or re-read the material.
             Always make sure you understand all the "Try-it-Yourself" examples.</p>
-         <p>
+        <p>
             JavaScript isn't just another programming language; it's the language of the web. &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;  From enhancing user interfaces with smooth animations to handling complex logic behind the scenes, 
+            &nbsp;&nbsp; From enhancing user interfaces with smooth animations to handling complex logic behind the
+            scenes,
             JavaScript empowers developers to transform static websites into interactive experiences.
-         </p>
+        </p>
         <div class="table" style="margin-top: 40px; margin-bottom: 40px;">
             <h1 style="color: #666666; font-weight: 500;">Table Of Contents</h1>
-            
-              <a href="">Stings</a>
-              <a href="">Variables</a>
-              <a href="">Numbers</a>
-              <a href="">Operators</a>
-              <a href="">Functions</a>
-              <a href="">Array</a>
-                    <a href="">Indexes</a>
-                    <a href="">Mutability</a>
-                    <a href="">length</a>
+
+            <a href="">Stings</a>
+            <a href="">Variables</a>
+            <a href="">Numbers</a>
+            <a href="">Operators</a>
+            <a href="">Functions</a>
+            <a href="">Array</a>
+            <a href="">Indexes</a>
+            <a href="">Mutability</a>
+            <a href="">length</a>
         </div>
 
     </div>
 
 </body>
+
 </html>
