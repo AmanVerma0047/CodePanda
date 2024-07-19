@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Script Tutorial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-   <style>     
+   
+    <style>     
         *{
          margin: 0px;
          padding: 0px;
@@ -23,6 +23,14 @@
             font-family: "Poppins", sans-serif;
             font-weight: 100;
             font-style: normal;
+        }
+        body {
+            color: #666666;
+            font-weight: 425;
+            word-spacing: 0.025em;
+            letter-spacing: 0.015em;
+            font-size: 1.13rem;
+            height: 100%;
         }
 
         * {
@@ -34,7 +42,7 @@
         #main {
             position: relative;
             max-width: 800px;
-            margin: 15px 300px 19px 489px;
+            margin: 15px 300px 19px 360px;
             height: 100%;
             line-height: 1.5;
         }
@@ -96,6 +104,41 @@
             padding: 0.14285714em 0em;
             line-height: inherit;
         }
+        h2{
+            font-weight: 600; 
+            font-size: 23px; 
+            color: #666666;
+            cursor: default;
+        }
+        code {
+            background-color: #E8E8E8;
+            border: 1px solid #BCBEC0;
+            padding: 2px;
+            font-family: "monospace", 'Menlo', 'Consolas';
+            font-size: 1rem;
+            }
+        b{
+            color: #666666;
+            font-size: 18px;
+        }               
+        .example {
+            padding: 8px 20px;
+            margin-top: 15px;
+            box-shadow: none;
+            background-color: #E7E9EB;
+            border-radius: 5px;
+        }
+        .example_content{
+            background-color: #ffffff;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 12px;
+            border: none;
+            border-left: 5px solid #21ba45;
+        }
+    
     </style>
 </head>
 
@@ -113,14 +156,14 @@
             <a href="" style="text-decoration: none;">Java Script</a>
         </div>
         <div class="divider"></div>
-        <img src="monster002.jpg" alt="monster002" class="image-monster info">
+        <img src="./images/panda.jpg" alt="cute_panda" class="image-monster info">
         <p>In this tutorial, the learning speed is your choice.
             Everything is up to you. &nbsp;
             If you are struggling, take a break, or re-read the material.
             Always make sure you understand all the "Try-it-Yourself" examples.</p>
         <p>
             JavaScript isn't just another programming language; it's the language of the web. &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp; From enhancing user interfaces with smooth animations to handling complex logic behind the
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  From enhancing user interfaces with smooth animations to handling complex logic behind the
             scenes,
             JavaScript empowers developers to transform static websites into interactive experiences.
         </p>
@@ -150,7 +193,20 @@
             <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 8.2 &nbsp;<a href="">.filter()</a><br></p>
           </div>
         </div>
+        <h2 ><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>S</big>trings</h2>
+        <div class="divider"></div>
+        <p>In JavaScript, strings are sequences of characters enclosed within either single quotes <code>'</code> or double quotes <code>"</code>. 
+            Strings must begin and end with <b>quotation marks</b> .</p>
 
+    <div class="example">
+        <h3>Example</h3>
+        <div class="example_content" style="color: #161c20; ">
+            <span> &nbsp; let &nbsp; <b>'</b> Hi Panda <b>'</b></span> <br>
+            <span> &nbsp; let &nbsp; <b>"</b> Hi Panda <b>"</b></span>
+        </div>
+    </div>   
+    <p style="margin-top: 18px;"> The quotes are there to indicate the enclosed text is a value, not code.</p>
+            
     </div>
 
 </body>
