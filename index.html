@@ -1,62 +1,95 @@
 <!-- This file is Remade So we can get everything working:) -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodePanda</title>
     <style>
-        *{
-            margin:0px;
-            padding:0px;
-            font-family:Courier, monospace;
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Courier, monospace;
+
         }
 
 
-        #nav{
+        #nav {
             background-color: #0F1111;
             display: flex;
             flex-direction: row;
             position: sticky;
         }
 
-        #icon{
-            height:64px;
-            width:64px;
-            border-radius:100%;
-            margin-top:10px;
-            margin-left:10px;
+        #icon {
+            height: 64px;
+            width: 64px;
+            border-radius: 100%;
+            margin-top: 10px;
+            margin-left: 10px;
             margin-bottom: 5px;
-            
+
         }
-        #nav_items{
+
+        #nav_items {
             display: flex;
             flex-direction: row;
-            color:white;
             font-weight: bold;
             letter-spacing: 1;
-            
-        }
-        .menu_bar_links{
-            padding-top:15px;
-            padding-bottom:15px;
-            padding-left:5px;
-            padding-right:5px;
-            margin-top:15px;
-            margin-bottom:15px;
+            color: white;
         }
 
-        .menu_bar_links:hover{
+        .menu_bar_links {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .menu_bar_links:hover {
             background-color: #317587;
             font-size: 17px;
-            border-radius:5px;
+            border-radius: 5px;
+
+        }
+
+        #showcase {
+            background-color: #a6f6a6;
+            display: flex;
+            flex-direction: row;
+            color: #006400;
+            font-weight: normal;
+            align-items: center;
+        }
+
+        #d_model {
+            height: 400px;
+            width: 530px;
+        }
+
+        #text_style {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 50px;
+        }
+
+        #button_style{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
             
         }
-        
-
     </style>
 </head>
- <body>
+
+<body>
+
+    <!-- Navigation bar code -->
+
     <div id="nav">
         <img id="icon" src="/CodePanda/images/panda.jpg">
         <ul id="nav_items" type="none">
@@ -66,5 +99,27 @@
             <li class="menu_bar_links">|Projects|</li>
         </ul>
     </div>
- </body>
- </html>
+
+    <!-- Navigation bar ends -->
+
+    <div id="showcase">
+        <div id="text_style">
+            <h1>A Better way to practice Programming</h1>
+            <br>
+            <h4>Learn to code with our 1000+ practice code problems and a understandable documentation.<br>
+                Use CodePanda Editor with real time programming execution.
+            </h4>
+            <br>
+            <div id="button_style">
+            <button>Start Learning</button>
+            <button>Code Editor</button>
+            </div>
+        </div>
+        <br>
+        <!-- 3d-model -->
+        <img id="d_model" src="/CodePanda/images/3d model image.png">
+    </div>
+    <img style="width:100% ;position: relative; margin-top:-70px" src="/CodePanda/images/borderimage.png">
+</body>
+
+</html>
