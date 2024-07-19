@@ -79,10 +79,22 @@
         .table {
             position: relative;
             border: 1px solid rgba(34, 36, 38, 0.15);
-            border-top: 2px solid #21ba45;
+            border-top: 4px solid #21ba45;
+            border-bottom: 4px solid #21ba45;
+            box-shadow: #666666;
             padding: 1rem 1rem;
             border-radius: 0.5rem;
-
+        }
+        .list{
+            cursor: pointer;
+        }
+        .table a{
+            color: #4183c4;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+            padding: 0.14285714em 0em;
+            line-height: inherit;
         }
     </style>
 </head>
@@ -115,15 +127,28 @@
         <div class="table" style="margin-top: 40px; margin-bottom: 40px;">
             <h1 style="color: #666666; font-weight: 500;">Table Of Contents</h1>
 
-            <a href="">Stings</a>
-            <a href="">Variables</a>
-            <a href="">Numbers</a>
-            <a href="">Operators</a>
-            <a href="">Functions</a>
-            <a href="">Array</a>
-            <a href="">Indexes</a>
-            <a href="">Mutability</a>
-            <a href="">length</a>
+          <div id="list">
+            <p style="margin: 10px 0px 5px 0px;">1. &nbsp;<a href="">Strings</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">2. &nbsp;<a href="">Variables</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">3. &nbsp;<a href="">Numbers</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">4. &nbsp;<a href="">Operators</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">5. &nbsp;<a href="">Functions</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">6. &nbsp;<a href="">Array</a><br></p>
+
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 6.1 &nbsp;<a href="">Indexes</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 6.2 &nbsp;<a href="">Mutability</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 6.3 &nbsp;<a href="">length</a><br></p>
+
+            <p style="margin: 10px 0px 5px 0px;">7. &nbsp;<a href="">Objects</a><br></p>
+
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 7.1 &nbsp;<a href="">Key-value Pairs</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 7.2 &nbsp;<a href="">Dot Notation</a><br></p>
+
+            <p style="margin: 10px 0px 5px 0px;">8. &nbsp;<a href="">Loops</a><br></p>
+
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 8.1 &nbsp;<a href="">.map()</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 8.2 &nbsp;<a href="">.filter()</a><br></p>
+          </div>
         </div>
 
     </div>
