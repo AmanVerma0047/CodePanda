@@ -124,6 +124,7 @@
         .example {
             padding: 8px 20px;
             margin-top: 15px;
+            margin-bottom: 19px;
             box-shadow: none;
             background-color: #E7E9EB;
             border-radius: 5px;
@@ -172,9 +173,9 @@
 
           <div id="list">
             <p style="margin: 10px 0px 5px 0px;">1. &nbsp;<a href="#strings">Strings</a><br></p>
-            <p style="margin: 10px 0px 5px 0px;">2. &nbsp;<a href="">Variables</a><br></p>
-            <p style="margin: 10px 0px 5px 0px;">3. &nbsp;<a href="">Numbers</a><br></p>
-            <p style="margin: 10px 0px 5px 0px;">4. &nbsp;<a href="">Operators</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">2. &nbsp;<a href="#variables">Variables</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">3. &nbsp;<a href="#numbers">Numbers</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">4. &nbsp;<a href="#operator">Operators</a><br></p>
             <p style="margin: 10px 0px 5px 0px;">5. &nbsp;<a href="">Functions</a><br></p>
             <p style="margin: 10px 0px 5px 0px;">6. &nbsp;<a href="">Array</a><br></p>
 
@@ -207,7 +208,7 @@
         </div>
     </div>   
     <p style="margin-top: 18px;"> The quotes are there to indicate the enclosed text is a value, not code.</p>
-    <h2 id="strings"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>V</big>aribles</h2>
+    <h2 id="variables"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>V</big>ariables</h2>
      <div class="divider"></div> 
     <p>A variable is a container for a value, like a number we might use in a sum,
        or a string that we might use as part of a sentence.
@@ -215,8 +216,8 @@
     <p><b>Basic rules to declare a variable in JavaScript:</b></p>
     <ul>
         <li>These are case-sensitive.</li>
-        <li>Can only begin with a letter, underscore(“_”) or “$” symbol.</li>
-        <li>It can contain letters, numbers, underscore, or “$” symbol.</li>
+        <li>Can only begin with a letter, underscore <code>_</code>  or   <code>$</code> symbol.</li>
+        <li>It can contain letters, numbers, underscore, or <code>$</code> symbol.</li>
         <li>A variable name cannot be a reserved keyword.</li>
     </ul><br>
     <p>JavaScript is a dynamically typed language so the type of variables is decided at runtime.
@@ -236,9 +237,67 @@
             <span> &nbsp; const &nbsp; _panda = "bamboo"</span>
         </div>
     </div>     
-      
-
-</div>   
+   <h2 id="variables"><a href="" style="text-decoration: none; color: #4183c4; ">#</a> &nbsp;<big>N</big>umbers</h2>
+    <div class="divider"></div>    
+    <p>The <code>Number</code> constructor contains constants and methods for working with numbers.
+         Values of other types can be converted to numbers using the <code>Number()</code> function.</p>
+    <p>If a number does not contain a decimal, it's referred to as an <b>integer</b>.
+        JavaScript has only one type of number. Numbers can be written with or without decimals.
+    </p>
+    <div class="example">
+        <h3>Example</h3>
+        <div class="example_content" style="color: #161c20; ">
+            <span> &nbsp; let &nbsp; A = 2.41 &nbsp;&nbsp; // A number with decimals</span> <br>
+            <span> &nbsp; let &nbsp; P = 8 &nbsp;&nbsp; // A number without decimals</span><br>
+        </div>
+    </div>     
+    <h2 id="operator"><a href="" style="text-decoration: none; color: #4183c4; ">#</a> &nbsp;<big>O</big>perators</h2>
+    <div class="divider"></div>     
+    <p><b>JavaScript Operators</b> are symbols used to perform specific mathematical, comparison, assignment, and logical computations on operands. <br>
+    They are fundamental elements in JavaScript programming, allowing developers to manipulate data and control program flow efficiently.</p>
+    <p>Operators are the symbols between values that allow different operations like 
+        addition <code>+</code> , subtraction <code>-</code> , multiplication <code>*</code> , division <code>/</code> , modulus <code>%</code> , and exponentiation <code>**</code> .</p>
+        <div class="example">
+            <h3>Example : </h3>
+             <h2 style="margin-top: 9px;"> 1. Addition operator(+)</h2>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp; let &nbsp; x = 2; </span> <br>
+                <span> &nbsp; let &nbsp; y = 3; </span><br>
+                <span> &nbsp; let &nbsp; z = x + y; </span><br>
+            </div>
+            <h2 style="margin-top: 9px;"> 2. Substractor operator(-)</h2>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp; let &nbsp; a = 7 </span> <br>
+                <span> &nbsp; let &nbsp; b = 4; </span><br>
+                <span> &nbsp; let &nbsp; z = x - y; </span><br>
+            </div>            
+            <h2 style="margin-top: 9px;"> 3. Multiplication operator(*)</h2>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp; let &nbsp; p = 4; </span> <br>
+                <span> &nbsp; let &nbsp; q = 3; </span><br>
+                <span> &nbsp; let &nbsp; z = x * y; </span><br>
+            </div>             
+            <h2 style="margin-top: 9px;"> 4. Division operator(/)</h2>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp; let &nbsp; x = 8; </span> <br>
+                <span> &nbsp; let &nbsp; y = 4; </span><br>
+                <span> &nbsp; let &nbsp; z = x / y; </span><br>
+            </div> 
+            <h2 style="margin-top: 9px;"> 5. Modulus operator(%)</h2>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp; let &nbsp; m = 4; </span> <br>
+                <span> &nbsp; let &nbsp; n = 2; </span><br>
+                <span> &nbsp; let &nbsp; z = x % y; </span><br>
+            </div>             
+            <h2 style="margin-top: 9px;"> 5. Exponentiation operator(**)</h2>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp; let &nbsp; x = 3; </span> <br>
+                <span> &nbsp; let &nbsp; y = 2; </span><br>
+                <span> &nbsp; let &nbsp; z = x ** y; </span><br>
+            </div>             
+        </div>      
+    
+    </div>   
 
 </body>
 
