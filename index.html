@@ -41,6 +41,7 @@
         }
 
         .menu_bar_links {
+            font-size: 20px;
             padding-top: 15px;
             padding-bottom: 15px;
             padding-left: 5px;
@@ -51,7 +52,6 @@
 
         .menu_bar_links:hover {
             background-color: #317587;
-            font-size: 17px;
             border-radius: 5px;
 
         }
@@ -93,6 +93,19 @@
         #footer li{
             gap:10px;
         }
+
+        #btn{
+            text-decoration: none;
+            background-color: #247074;
+            padding: 10px;
+            border: 2px solid white;
+            color: white;
+            font-weight: bold;
+        }
+        #btn:hover{
+            background-color: white;
+            color:black;
+        }
     </style>
 </head>
 
@@ -114,15 +127,15 @@
 
     <div id="showcase">
         <div id="text_style">
-            <h1>A Better way to practice Programming</h1>
+            <h1 style = "font-size:72px;">A better way to practice Programming</h1>
             <br>
-            <h4>Learn to code with our 1000+ practice code problems and a understandable documentation.<br>
+            <h4 style = "font-size:24px;">Learn to code with our 1000+ practice code problems and a understandable documentation.<br>
                 Use CodePanda Editor with real time programming execution.
             </h4>
             <br>
             <div id="button_style">
-            <button>Start Learning</button>
-            <button>Code Editor</button>
+            <a href="java_script_tutorial.html"><button id="btn">Start Learning</button></a>
+            <a href="main.html"><button id="btn">Code Editor</button></a>
             </div>
         </div>
         <br>
