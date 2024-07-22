@@ -185,13 +185,10 @@
 
             <p style="margin: 10px 0px 5px 0px;">7. &nbsp;<a href="#object">Objects</a><br></p>
 
-            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 7.1 &nbsp;<a href="">Key-value Pairs</a><br></p>
-            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 7.2 &nbsp;<a href="">Dot Notation</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 7.1 &nbsp;<a href="#key">Key-value Pairs</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 7.2 &nbsp;<a href="#dot">Dot Notation</a><br></p>
 
-            <p style="margin: 10px 0px 5px 0px;">8. &nbsp;<a href="">Loops</a><br></p>
-
-            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 8.1 &nbsp;<a href="">.map()</a><br></p>
-            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 8.2 &nbsp;<a href="">.filter()</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">8. &nbsp;<a href="#loops">Loops</a><br></p>
           </div>
         </div>
 
@@ -370,14 +367,14 @@
         <h5>We can create objects in JavaScript like:</h5>
         <div class="example">
             <div class="example_content" style="color: #161c20; ">
-                <span> &nbsp;&nbsp;&nbsp; const person1 = {</span> <br>
-                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; firstName: "Joffery",</span> <br>    
-                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lastName: "Baratheon",</span> <br> 
-                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; email: "joff@widowswail.com"</span> <br> 
+                <span> &nbsp;&nbsp;&nbsp; const games = {</span> <br>
+                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indoor games: "Chess",</span> <br>    
+                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Outdoor games: "Cricket",</span> <br> 
+                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-games: "Free Fire"</span> <br> 
                 <span> &nbsp;&nbsp;&nbsp; }</span> <br> 
             </div>
         </div>        
-        <h3 id="length" style="font-weight: 600;"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>K</big>ey-Value Pairs</h3>     
+        <h3 id="key" style="font-weight: 600;"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>K</big>ey-Value Pairs</h3>     
         <p>An object contains properties, or key-value pairs. 
             Each property has a name, which is also called a key, and a corresponding value.</p>          
         <p>Objects are variables too. But objects can contain many values.</p>
@@ -387,13 +384,86 @@
             <div class="example_content" style="color: #161c20; ">
                 <span> &nbsp;&nbsp;&nbsp; const car = {type:"Fiat", model:"500", color:"white"};</span> <br>
             </div>
-    <h2 id="object"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>D</big>ot Notation</h2>
-    
-                
         </div>
+        <h2 id="dot"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>D</big>ot Notation</h2>
+        <p>In the <code>object.propertyName</code> syntax, 
+         the propertyName must be a valid JavaScript identifier which can also be a <code>reserved word</code>.</p>
+         <p> You want to access the E-games of game, you would return E-game.game. This is called dot notation</p> 
+        <div class="example">
+         <h4>Example:</h4>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; const car = {type:"Fiat", model:"500", color:"white"};</span> <br>
+            </div>
+        </div>
+        <h2 id="loops"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>A</big>rrays</h2>
+        <div class="divider"></div>
+        <p>The JavaScript loops are used to iterate the piece of code using for, while, do while or for-in loops. 
+         It makes the code compact. It is mostly used in array.</p>
+        <p>There are four types of loops in JavaScript.</p>
+        <ul>
+            <li>for loop</li>
+            <li>while loop</li>
+            <li>do-while loop</li>
+        </ul>
+        <br>
+        <h3>For loop in Java Script </h3>
+        <div class="example">
+            <h4>Syntax:</h4>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; for (initialization; condition; updation){</span> <br>
+                <span> &nbsp;&nbsp;&nbsp; Code to be executed</span> <br>  
+                <span> &nbsp;&nbsp;&nbsp; }</span> <br>  
+            </div>
+        </div>
+        <div class="example">
+            <h4>Example:</h4>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; for (let i = 0; i < 5; i++) {</span> <br>
+                <span> &nbsp;&nbsp;&nbsp; document.write(i + "< br>") </span> <br>  
+                <span> &nbsp;&nbsp;&nbsp; }</span> <br>  
+            </div>
+        </div><br>
+        <h3>while loop in Java Script </h3>
+        <div class="example">
+            <h4>Syntax:</h4>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; while (condition){</span> <br>
+                <span> &nbsp;&nbsp;&nbsp; Code to be executed</span> <br>  
+                <span> &nbsp;&nbsp;&nbsp; }</span> <br>  
+            </div>
+        </div>
+        <div class="example">
+            <h5>Example:</h5>
+        <div class="example_content" style="color: #161c20; ">
+            <span> &nbsp;&nbsp;&nbsp; while(i<=5) {</span> <br>
+            <span> &nbsp;&nbsp;&nbsp; document.write(i + "< br>") </span> <br>  
+            <span> &nbsp;&nbsp;&nbsp; i++;</span> <br>
+            <span> &nbsp;&nbsp;&nbsp; }</span> <br>  
+          </div>
+        </div><br>
 
-         
-    
+        <h3>do-while loop in Java Script </h3>
+        <div class="example">
+            <h4>Syntax:</h4>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; do{</span> <br>
+                <span> &nbsp;&nbsp;&nbsp; Code to be executed</span> <br>  
+                <span> &nbsp;&nbsp;&nbsp; }while(condition);</span> <br>  
+            </div>
+        </div>
+        <div class="example">
+            <h5>Example:</h5>
+        <div class="example_content" style="color: #161c20; ">
+            <span> &nbsp;&nbsp;&nbsp; do {</span> <br>
+            <span> &nbsp;&nbsp;&nbsp; document.write(i + "< br>") </span> <br>  
+            <span> &nbsp;&nbsp;&nbsp; i++;</span> <br>
+            <span> &nbsp;&nbsp;&nbsp; }while(i<=5);</span> <br>  
+          </div>
+        </div><br>
+        <div class="divider"></div>
+           
+
+    </div>
 </body>
 
 </html>
