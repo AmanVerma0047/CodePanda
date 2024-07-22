@@ -177,13 +177,13 @@
             <p style="margin: 10px 0px 5px 0px;">3. &nbsp;<a href="#numbers">Numbers</a><br></p>
             <p style="margin: 10px 0px 5px 0px;">4. &nbsp;<a href="#operator">Operators</a><br></p>
             <p style="margin: 10px 0px 5px 0px;">5. &nbsp;<a href="#function">Functions</a><br></p>
-            <p style="margin: 10px 0px 5px 0px;">6. &nbsp;<a href="">Array</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">6. &nbsp;<a href="#array">Array</a><br></p>
 
-            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 6.1 &nbsp;<a href="">Indexes</a><br></p>
-            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 6.2 &nbsp;<a href="">Mutability</a><br></p>
-            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 6.3 &nbsp;<a href="">length</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 6.1 &nbsp;<a href="#indexes">Indexes</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 6.2 &nbsp;<a href="#mutability">Mutability</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 6.3 &nbsp;<a href="#length">length</a><br></p>
 
-            <p style="margin: 10px 0px 5px 0px;">7. &nbsp;<a href="">Objects</a><br></p>
+            <p style="margin: 10px 0px 5px 0px;">7. &nbsp;<a href="#object">Objects</a><br></p>
 
             <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 7.1 &nbsp;<a href="">Key-value Pairs</a><br></p>
             <p style="margin: 10px 0px 5px 0px;">&nbsp;&nbsp; 7.2 &nbsp;<a href="">Dot Notation</a><br></p>
@@ -309,13 +309,91 @@
             <div class="example">
                 <h3>Example</h3>
                 <div class="example_content" style="color: #161c20; ">
-                    <span> &nbsp;&nbsp;&nbsp; <b style="color: red;">function</b> square(number) { </span> <br>
+                    <span> &nbsp;&nbsp;&nbsp; <b style="color: red;">function</b> <b style="color: #4183c4;">square</b>(number) { </span> <br>
                     <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return number * number; <br>&nbsp;&nbsp; } </span><br>
                 </div>
             </div>               
+            <p ><b style="color: red;">Using the return <code style="color: #161c20;">keyword</code> is very important.
+                When you encounter a function, you must <code style="color: #161c20;">return</code> your answer, otherwise the code won't work.</b></p>
+        <h2 id="array"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>A</big>rrays</h2>
+        <div class="divider"></div>
+        <p>An array in JavaScript is a data structure used to store multiple values in a single variable. It can hold various data types and allows for dynamic resizing. </p>
+        <p><b>We can write array like:</b></p>
+        <div class="example">
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; <b style="color: #4183c4;">const</b> cars = ["Panda", "Bamboo", "Eat"];</span> <br>
+            </div>
+        </div>   
+        <h3 id="indexes" style="font-weight: 600;"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>I</big>ndexes</h3>     
+        <p>    Elements are accessed by their index, starting from 0.</p>
+        <p>We can access index of elements of array in JavaScript using:</p>
+        <div class="example">
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; <pre style="display: inline; color: #4183c4;">const</pre> fruits = ["Papaya", "Banana", "Apple", "Mango"];</span><br>
+                <span> &nbsp;&nbsp;&nbsp; <pre style="display: inline; color: #4183c4;">let</pre> index = fruits.indexOf("Apple");</span>
 
-    </div>   
+            </div>
+            <h5>Index of "Apple" is: 2</h5>
+        </div>
+        <h3 id="mutability" style="font-weight: 600;"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>M</big>utability</h3>     
+          <p>Elements in arrays are <b>mutable</b>, which means they can be <b>changed</b>. 
+            For example, let's say we've got an array of numbers:</p>
+            <div class="example">
+                <div class="example_content" style="color: #161c20; ">
+                    <span> &nbsp;&nbsp;&nbsp; <b style="color: #4183c4;">const</b> cars = ["Panda", "Bamboo", "Eat"];</span> <br>
+                </div>
+                <h5>To change the value of <b>"Eat"</b> (at index 2), we do this:</h5>
+                <div class="example_content" style="color: #161c20; ">
+                    <span> &nbsp;&nbsp;&nbsp; cars[3] = "Animal"</span> <br>
+                </div>               
+            </div>             
+        <h3 id="length" style="font-weight: 600;"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>.l</big>ength</h3>     
+        
+        <p>Javascript has a .length property that returns the size of an array as a number(integer).</p>    
+        <p>Here's an example of how to use it:</p>
+        <div class="example">
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; let number = [5,1,7,4]</span> <br>
+            </div>
+            <h5>To find length of array :</h5>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; number.length</span> <br>
+            </div>            
+            <p>The length of number array is : 4</p>
+        </div> 
+        <h2 id="object"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>O</big>bjects</h2>
+       
+        <div class="divider"></div> 
+        <p>Objects in JavaScript are the most important data type and form the building blocks for modern JavaScript. <br>
+        Unlike primitive data types (Number, String, Boolean, null, undefined, and symbol), which hold a single value, objects can hold multiple values as properties.</p>
+        
+        <h5>We can create objects in JavaScript like:</h5>
+        <div class="example">
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; const person1 = {</span> <br>
+                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; firstName: "Joffery",</span> <br>    
+                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lastName: "Baratheon",</span> <br> 
+                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; email: "joff@widowswail.com"</span> <br> 
+                <span> &nbsp;&nbsp;&nbsp; }</span> <br> 
+            </div>
+        </div>        
+        <h3 id="length" style="font-weight: 600;"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>K</big>ey-Value Pairs</h3>     
+        <p>An object contains properties, or key-value pairs. 
+            Each property has a name, which is also called a key, and a corresponding value.</p>          
+        <p>Objects are variables too. But objects can contain many values.</p>
+        <p>An object literal is a list of name:value pairs inside curly braces {}</p>
+        <div class="example">
+            <h4>Example:</h4>
+            <div class="example_content" style="color: #161c20; ">
+                <span> &nbsp;&nbsp;&nbsp; const car = {type:"Fiat", model:"500", color:"white"};</span> <br>
+            </div>
+    <h2 id="object"><a href="" style="text-decoration: none; color: #4183c4;">#</a> &nbsp;<big>D</big>ot Notation</h2>
+    
+                
+        </div>
 
+         
+    
 </body>
 
 </html>
