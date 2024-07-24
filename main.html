@@ -45,7 +45,7 @@
 			font-size: 18px;
 			font-family: courier;
 			border: solid green;
-			color:white;
+			color: white;
 			background-color: #011725;
 			border-width: 5px;
 		}
@@ -72,6 +72,7 @@
 			border: none;
 			font-family: courier;
 			font-weight: bolder;
+			font-size: 16px;
 			margin: 2px;
 			border-radius: 5px;
 		}
@@ -94,9 +95,9 @@
 			display: inline-flex;
 		}
 
-		#nav{
+		#nav {
 			margin: 0vh;
-			padding:3px;
+			padding: 3px;
 			background-color: #011725;
 		}
 	</style>
@@ -117,33 +118,53 @@
 
 			<button onclick="myFunction()" class="button">Copy text</button>
 
-			<input type="number" placeholder="Type font size value here.." id="setfontsize" ></input>
-			<button class = "button" onclick="setfontsize()">Set Font Size</button>
+			<input type="number" placeholder="Type font size value here.." id="setfontsize"></input>
+			<button class="button" onclick="setfontsize()">Set Font Size</button>
 
 		</div>
-	</div>
 
-	<br>
-	<div class="flex" name="flex">
 
-		<div class="main" id="main" name="main">
-			<textarea id="textarea" onkeyup="refresh()" placeholder="Type your code here..."></textarea>
-			<iframe id="viewer"></iframe>
-			<script>
-				function myFunction() {
-					var copyText = document.getElementById("textarea");
-					copyText.select();
-					copyText.setSelectionRange(0, 99999)
-					document.execCommand("copy");
-					alert("Copied the text: " + copyText.value);
-				}
+		<br>
+		<div class="flex" name="flex">
+			<div class="main" id="main" name="main">
+				<textarea id="textarea" onkeyup="refresh()" placeholder="Type your code here..."></textarea>
+				<iframe id="viewer"></iframe>
+				<script>
+					function myFunction() {
+						var copyText = document.getElementById("textarea");
+						copyText.select();
+						copyText.setSelectionRange(0, 99999)
+						document.execCommand("copy");
+						alert("Copied the text: " + copyText.value);
+					}
 
-				function setfontsize(){
-					var efontsize = document.getElementById("setfontsize").value
-					document.getElementById("textarea").style.fontSize =efontsize +"px";
-				}
+					function setfontsize() {
+						var efontsize = document.getElementById("setfontsize").value
+						document.getElementById("textarea").style.fontSize = efontsize + "px";
+					}
 
-			</script>
+				</script>
+			</div>
+			</div>
+			<!-- footer of website -->
+			<hr>
+			<br>
+			<div id="footer">
+				<h5>©2024, CodePanda</h5>
+				<ul type="none">
+					<li>
+						<h5>Home</h5>
+					</li>
+					<li>
+						<h5>Github</h5>
+					</li>
+					<li>
+						<h5>Projects</h5>
+					</li>
+				</ul>
+			</div>
+		
+	
 </body>
 
 </html>
