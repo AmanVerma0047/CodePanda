@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .h1 {
+            background-color: #748fff;
+            color: white;
+            padding: 1pc;
+            margin: 0px;
+            text-align: center;
+            
+        }
+
+        .container
+        {
+        margin-top: 15px;
+        padding-top: 0px;
+        padding: 0rem 1rem;
+        background-color: #363131;
+        width: 100%;
+        color: white;
+        resize: none ;
+        white-space: pre ;
+        line-height: 24px;
+           
+        }
+        #main {
+            position: relative;
+            max-width: 800px;
+            margin: 15px 300px 19px 360px;
+            height: 100%;
+            line-height: 1.5;
+        }
+        .code{
+            line-height: 10px;
+            max-height: 650px;
+            display: inline-block;
+        }
+        p{
+            line-height: 10px;
+            margin-top: 0px;
+
+        }
+        .tag{
+            color: #e2777a;
+        }
+        .pun{
+            color: #ccc;
+        }
+        .doc{
+            color: #999;
+        }
+        .token.puncuation{
+            color: #ccc
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="h1">Pandacode Projects</h1>
+    </header>
+    
+<div id="main">
+
+    <p>Index File </p>
+    <div class="container">
+        <div class="code">  
+            <span class="doctype">
+                <span class="token puncuation"><!</span>
+
+            </span>
+            
+
+            <span><p> < !DOCTYPE html></p></span>
+            <span><p> < html lang ="en"></p></span>
+            <span><p> < head></p></span>
+            <span><p> < title> Calculator < /title ></p></span>
+            <span><p> < link rel ="stylesheet" href = "style.css"> </p></span>
+            <span><p>< / head ></p></span>
+            <span><p>< body ></p></span>
+            <span><p>< div id = " calc " ></p></span>
+            <span><p>< div id = " content " ></p></span>
+            <span><p>< form ></p></span>
+           <span><p>< div id = " output " ></p></span>
+           <span><p>< input type="text" id =' res ' ></p></span>
+           <span><p>< /div></p></span>
+           <span><p>< div class="btn"></p></span>
+           <span><p><  type="button" value='C' onclick="Clear()" id="clear"></p></span>
+           <span><p>< input type="button" value='%' onclick="Solve('%')"></p></span>
+           <span><p>< input type="button" value='/' onclick="Solve('/')"></p></span>
+           <span><p>< br></p></span>
+           <span><p>< input type="button" value='7' onclick="Solve('7')"></p></span>
+           <span><p>< input type="button" value='8' onclick="Solve('8')"><br></p></span>
+           <span><p>< input type="button" value='9' onclick="Solve('9')"></p></span>
+           <span><p>< input type="button" value='x' onclick="Solve('*')"></p></span>
+           <span><p>< br</p></span>
+           <span><p>< input type="button" value='4' onclick="Solve('4')"></p></span>
+           <span><p>< input type="button" value='5' onclick="Solve('5')"></p></span>
+           <span><p>< input type="button" value='6' onclick="Solve('6')"></p></span>
+           <span><p>< input type="button" value='-' onclick="Solve('-')"></p></span>
+           <span><p>< br></p></span>
+           <span><p>< input type="button" value='1' onclick="Solve('1')"></p></span>
+           <span><p>< input type="button" value='2' onclick="Solve('2')"></p></span>
+           <span><p>< input type="button" value='3' onclick="Solve('3')"></p></span>
+           <span><p>< input type="button" value='+' onclick="Solve('+')"></p></span>
+           <span><p>< br></p></span>
+           <span><p>< input type="button" value='00' onclick="Solve('00')"></p></span>
+           <span><p>< input type="button" value='0' onclick="Solve('0')"></p></span>
+           <span><p><  input type="button" value='.' onclick="Solve('.')"></p></span>
+           <span><p>< input type="button" value='=' onclick="Result()"></p></span>
+           <span><p>< /div></p></span>
+           <span><p>< /form></p></span>
+           <span><p>< /div></p></span>
+           <span><p>< /div></p></span>
+           <Span><p>< script src='index.js'></script></p></Span>
+           <span>< /body></span>
+           <span><p>< /html></p></span>
+        </div>
+</div>
+
+</body>
+</html>
